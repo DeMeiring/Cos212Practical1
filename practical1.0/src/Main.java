@@ -31,7 +31,7 @@ public class Main
 		}
 	}*/
 
-	/*public static void searchKey(SkipList<Integer> skiplist, Integer key)
+	public static void searchKey(SkipList<Integer> skiplist, Integer key)
 	{
 		if (skiplist.isEmpty())
 			System.out.println("List is empty");
@@ -43,7 +43,7 @@ public class Main
 			else
 				System.out.println("Key " + key + " not found");	
 		}
-	}*/
+	}
 
 	public static void printList(SkipList<Integer> skiplist) 
 	{ 
@@ -82,7 +82,7 @@ public class Main
 
 		printList(skiplist);
 		
-		/*searchKey(skiplist, 10);*/
+		searchKey(skiplist, 10);
 
 		skiplist.insert(10);
 
@@ -97,7 +97,7 @@ public class Main
 		firstKey(skiplist);
 		lastKey(skiplist);
 
-		/*searchKey(skiplist, 10);*/
+		searchKey(skiplist, 10);
            
 		/* Expected Output:
 		First key : 8
