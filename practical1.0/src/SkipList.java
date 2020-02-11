@@ -53,30 +53,66 @@ public class SkipList<T extends Comparable<? super T>>
 	public boolean isEmpty()
 	{
 		//Your code goes here
+		return root[0].next == null;
 	}
 
 	public void insert(T key)
 	{
-		//Your code goes here
+		SkipListNode[] curr = new SkipListNode[maxLevel];
+		SkipListNode[] prev = new SkipListNode[maxLevel];
+		SkipListNode newNode;
+		int lvl,i;
+
+		curr[maxLevel-1] = root[maxLevel-1];
+		prev[maxLevel-1]=null;
+
+		for(lvl=maxLevel-1;lvl>=0;lvl--){	//loop to test each inside condition of each level
+			while(curr[lvl]!=null && key.compareTo((T)curr[lvl].key)>0){	//if key is larger than curr[lvl].key
+				prev[lvl]=curr[lvl];
+				curr[lvl]=curr[lvl].next[lvl];
+			}
+			if(curr[lvl]!=null && key.compareTo((T)curr[lvl].key)==0)	//if node with same key is present then do not include it
+				return;
+			if(lvl>0)
+				if(prev[lvl]==null){
+					curr[lvl-1]=root[lvl-1];
+					prev[lvl-1]=null;
+				}else{
+					curr[lvl-1]=prev[lvl].next[lvl-1];
+					prev[lvl-1]=prev[lvl];
+				}
+		}
+		lvl=chooseLevel();	//choose random level for newNode to be at
+
+		newNode = new SkipListNode(key,lvl+1);
+		for(i=0;i<=lvl;i++){
+			newNode.next[i]=curr[i];	//loop through to the appropriate level cap for newNode and make next array of newNode point to current larger than node array
+			if(prev[i]==null){	//if prev node null then newNode is the new first node in the skipList for that level
+				root[i]=newNode;
+			}else
+				prev[i].next[i]=newNode;
+		}
+
+
 	}
 
-	public boolean delete(T key)
+	/*public boolean delete(T key)
 	{
 		//Your code goes here
-	}
+	}*/
 
-	public T first()
+	/*public T first()
 	{
 		//Your code goes here
-	}
+	}*/
 
-	public T last()
+	/*public T last()
 	{
 		//Your code goes here 
-	}	
+	}	*/
 
-	public T search(T key)
+	/*public T search(T key)
 	{
 		//Your code goes here
-	}
+	}*/
 }
