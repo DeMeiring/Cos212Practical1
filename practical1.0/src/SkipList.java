@@ -101,15 +101,30 @@ public class SkipList<T extends Comparable<? super T>>
 		//Your code goes here
 	}*/
 
-	/*public T first()
+	public T first()
 	{
 		//Your code goes here
-	}*/
+		if(isEmpty())
+			return null;
+		else
+			return root[0].key;
+	}
 
-	/*public T last()
+	public T last()
 	{
-		//Your code goes here 
-	}	*/
+		//Your code goes here
+		int i=0;//keep count of next array
+		SkipListNode curr = root[0];
+		if (isEmpty())
+			return null;
+		else{
+			while(curr.next[0]!=null){
+				curr = curr.next[0];
+				i++;
+			}
+			return (T)curr.key;
+		}
+	}
 
 	/*public T search(T key)
 	{

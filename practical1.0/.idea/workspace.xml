@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66cc6377-fc64-4399-b4ce-62536d747bd4" name="Default Changelist" comment="Project1.2 Insert newNode added">
+    <list default="true" id="66cc6377-fc64-4399-b4ce-62536d747bd4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SkipList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SkipList.java" afterDir="false" />
@@ -73,7 +73,7 @@
       <workItem from="1581406309759" duration="3370000" />
       <workItem from="1581419726686" duration="180000" />
       <workItem from="1581420371295" duration="2672000" />
-      <workItem from="1581424034520" duration="2714000" />
+      <workItem from="1581424034520" duration="3960000" />
     </task>
     <task id="LOCAL-00001" summary="Project1.2 alterations">
       <created>1581424351462</created>
@@ -82,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581424351462</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Project1.2 Insert newNode added and is working">
+      <created>1581426780976</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581426780976</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,7 +110,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project1.2 alterations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project1.2 alterations" />
+    <MESSAGE value="Project1.2 Insert newNode added and is working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project1.2 Insert newNode added and is working" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/SkipList.java</url>
+          <line>112</line>
+          <properties class="SkipList" method="last">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>

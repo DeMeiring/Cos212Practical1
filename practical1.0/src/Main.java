@@ -1,21 +1,21 @@
 public class Main
 {
 
-	/*public static void firstKey(SkipList<Integer> skiplist)
+	public static void firstKey(SkipList<Integer> skiplist)
 	{
 		if (skiplist.isEmpty())
 			System.out.println("List is empty");
 		else
 			System.out.println("First key : " + skiplist.first());
-	}*/
+	}
 
-	/*public static void lastKey(SkipList<Integer> skiplist)
+	public static void lastKey(SkipList<Integer> skiplist)
 	{
 		if (skiplist.isEmpty())
 			System.out.println("List is empty");
 		else
 			System.out.println("Last key : " + skiplist.last());
-	}*/
+	}
 
 	/*public static void deleteKey(SkipList<Integer> skiplist, Integer key)
 	{
@@ -77,8 +77,8 @@ public class Main
 
 		skiplist.insert(18);
 
-		/*firstKey(skiplist);
-		lastKey(skiplist);*/
+		firstKey(skiplist);
+		lastKey(skiplist);
 
 		printList(skiplist);
 		
@@ -94,8 +94,8 @@ public class Main
 
 		printList(skiplist);
 
-		/*firstKey(skiplist);*/
-		/*lastKey(skiplist);*/
+		firstKey(skiplist);
+		lastKey(skiplist);
 
 		/*searchKey(skiplist, 10);*/
            
