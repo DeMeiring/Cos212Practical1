@@ -96,10 +96,30 @@ public class SkipList<T extends Comparable<? super T>>
 
 	}
 
-	/*public boolean delete(T key)
+	public boolean delete(T key)
 	{
 		//Your code goes here
-	}*/
+		if(isEmpty()){
+			return false;
+		}else{
+			if(search(key)==null){
+				return false;
+			}
+			SkipListNode curr;
+			SkipListNode prev;
+			int lvl;
+			for(lvl=maxLevel-1;lvl>=0 && root[lvl]==null;lvl--);	//find highest non-null lvl
+			prev=curr = root[lvl];
+			for(int i=0;i>=0;i--){
+				while(key.compareTo((T)curr.next[i].key)>0){
+					prev=curr;
+					curr=curr.next[i];
+				}
+				prev.next[i]=curr.next[i];
+			}
+			return true;
+		}
+	}
 
 	public T first()
 	{
@@ -125,6 +145,8 @@ public class SkipList<T extends Comparable<? super T>>
 			return (T)curr.key;
 		}
 	}
+
+
 
 	public T search(T key)
 	{

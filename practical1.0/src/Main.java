@@ -17,7 +17,7 @@ public class Main
 			System.out.println("Last key : " + skiplist.last());
 	}
 
-	/*public static void deleteKey(SkipList<Integer> skiplist, Integer key)
+	public static void deleteKey(SkipList<Integer> skiplist, Integer key)
 	{
 		if (skiplist.isEmpty())
 			System.out.println("List is empty");
@@ -29,7 +29,7 @@ public class Main
 			else
 				System.out.println("Key " + key + " not found for deletion");	
 		}
-	}*/
+	}
 
 	public static void searchKey(SkipList<Integer> skiplist, Integer key)
 	{
@@ -86,11 +86,11 @@ public class Main
 
 		skiplist.insert(10);
 
-		/*deleteKey(skiplist, 18);*/
+		deleteKey(skiplist, 18);
 
-		/*deleteKey(skiplist, 9);*/
+		deleteKey(skiplist, 9);
 
-		/*deleteKey(skiplist, 3);*/
+		deleteKey(skiplist, 3);
 
 		printList(skiplist);
 
