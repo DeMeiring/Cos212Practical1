@@ -88,7 +88,11 @@ public class Main
 
 		deleteKey(skiplist, 18);
 
+		deleteKey(skiplist,8);
+
 		deleteKey(skiplist, 9);
+
+
 
 		deleteKey(skiplist, 3);
 

@@ -110,7 +110,10 @@ public class SkipList<T extends Comparable<? super T>>
 			int lvl;
 			for(lvl=maxLevel-1;lvl>=0 && root[lvl]==null;lvl--);	//find highest non-null lvl
 			prev=curr = root[lvl];
-			for(int i=lvl;i>=0;i--){
+			for(int i=lvl;i>=0;--i){
+				if(key.compareTo((T)root[i].key)==0){
+					root[i]=root[i].next[i];
+				}
 				while(curr.next[i]!=null&&key.compareTo((T)curr.next[i].key)<0){
 					prev=curr;
 					curr=curr.next[i];
