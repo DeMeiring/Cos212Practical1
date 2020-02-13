@@ -53,7 +53,10 @@ public class SkipList<T extends Comparable<? super T>>
 	public boolean isEmpty()
 	{
 		//Your code goes here
-		return root[0] == null;
+		if(root[0]==null){
+			return true;
+		}else
+			return false;
 	}
 
 	public void insert(T key)
@@ -114,13 +117,12 @@ public class SkipList<T extends Comparable<? super T>>
 				if(key.compareTo((T)root[i].key)==0){
 					root[i]=root[i].next[i];
 				}
-				while(curr.next[i]!=null&&key.compareTo((T)curr.next[i].key)<0){
+				while(curr.next[i]!=null&&key.compareTo((T)curr.key)!=0){
 					prev=curr;
 					curr=curr.next[i];
-					prev.next[i]=curr.next[i];
 				}
+				prev.next[i]=curr.next[i];
 				prev=curr=root[i];
-
 			}
 			return true;
 		}

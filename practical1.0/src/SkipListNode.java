@@ -13,5 +13,7 @@ public class SkipListNode<T>
 		for (int j = 0; j < n; j++)
 			next[j] = null;
 	}
-
+	/*
+	TODO: lowercase m for makefile
+	*/
 }
