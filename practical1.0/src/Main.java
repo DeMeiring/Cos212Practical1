@@ -88,12 +88,11 @@ public class Main
 
 		deleteKey(skiplist, 18);
 
-		deleteKey(skiplist,8);
-
 		deleteKey(skiplist, 9);
 
 
-
+		System.out.println("passed 9");
+		printList(skiplist);
 		deleteKey(skiplist, 3);
 
 		printList(skiplist);
@@ -102,7 +101,9 @@ public class Main
 		lastKey(skiplist);
 
 		searchKey(skiplist, 10);
-           
+
+
+		printList(skiplist);
 		/* Expected Output:
 		First key : 8
 		Last key : 18
