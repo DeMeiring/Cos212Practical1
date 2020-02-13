@@ -111,18 +111,19 @@ public class SkipList<T extends Comparable<? super T>>
 			SkipListNode curr;
 			SkipListNode prev;
 			int lvl;
-			for(lvl=maxLevel-1;lvl>=0 && root[lvl]==null;lvl--);	//find highest non-null lvl
+			for(lvl=maxLevel-1;lvl>=0 && root[lvl]==null;--lvl);	//find highest non-null lvl
 			prev=curr = root[lvl];
 			for(int i=lvl;i>=0;--i){
 				if(key.compareTo((T)root[i].key)==0){
 					root[i]=root[i].next[i];
-				}
-				while(curr.next[i]!=null&&key.compareTo((T)curr.key)!=0){
-					prev=curr;
-					curr=curr.next[i];
-				}
-				prev.next[i]=curr.next[i];
-				prev=curr=root[i];
+				}else {
+                    while (curr.next[i] != null && key.compareTo((T) curr.key)!=0) {
+                        prev = curr;
+                        curr = curr.next[i];
+                    }
+                    prev.next[i] = curr.next[i];
+                    prev = curr = root[i];
+                }
 			}
 			return true;
 		}

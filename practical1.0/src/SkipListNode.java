@@ -15,5 +15,6 @@ public class SkipListNode<T>
 	}
 	/*
 	TODO: lowercase m for makefile
+	TODO:check delete
 	*/
 }
