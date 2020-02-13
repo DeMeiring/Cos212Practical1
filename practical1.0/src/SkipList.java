@@ -53,7 +53,7 @@ public class SkipList<T extends Comparable<? super T>>
 	public boolean isEmpty()
 	{
 		//Your code goes here
-		return root[0].next == null;
+		return root[0] == null;
 	}
 
 	public void insert(T key)
