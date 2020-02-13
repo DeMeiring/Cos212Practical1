@@ -122,8 +122,8 @@ public class SkipList<T extends Comparable<? super T>>
                         curr = curr.next[i];
                     }
                     prev.next[i] = curr.next[i];
-                    prev = curr = root[i];
                 }
+                prev = curr = root[i];
 			}
 			return true;
 		}

@@ -4,7 +4,6 @@
     <list default="true" id="66cc6377-fc64-4399-b4ce-62536d747bd4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SkipList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SkipList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SkipListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SkipListNode.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1440">
-              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="194">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -30,7 +29,15 @@
         <entry file="file://$PROJECT_DIR$/src/SkipList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="124" column="42" lean-forward="true" selection-start-line="124" selection-start-column="42" selection-end-line="124" selection-end-column="42" />
+              <caret line="125" column="38" lean-forward="true" selection-start-line="125" selection-start-column="38" selection-end-line="125" selection-end-column="38" />
+              <folding>
+                <element signature="method#SkipList#0;class#SkipList#0" />
+                <element signature="method#choosePowers#0;class#SkipList#0" />
+                <element signature="method#chooseLevel#0;class#SkipList#0" />
+                <element signature="method#insert#0;class#SkipList#0" />
+                <element signature="method#first#0;class#SkipList#0" />
+                <element signature="method#last#0;class#SkipList#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,7 +167,7 @@
       <workItem from="1581587646720" duration="3978000" />
       <workItem from="1581596561720" duration="121000" />
       <workItem from="1581596712515" duration="106000" />
-      <workItem from="1581600732435" duration="6617000" />
+      <workItem from="1581600732435" duration="7992000" />
     </task>
     <task id="LOCAL-00001" summary="Project1.2 alterations">
       <created>1581424351462</created>
@@ -232,11 +239,18 @@
       <option name="project" value="LOCAL" />
       <updated>1581612370151</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Project1.2 Delete implimented and working(delete added else to the if before the while)(this time really)">
+      <created>1581614198664</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1581614198664</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14217000" />
+    <option name="totallyTimeSpent" value="15592000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -260,7 +274,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -269,7 +283,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32941177" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -336,16 +350,19 @@
     <MESSAGE value="Project1.2 Delete implimented and working(delete update, if root deleted fix)" />
     <MESSAGE value="Project1.2 Delete implimented and working(isEmpty update and fix)" />
     <MESSAGE value="Project1.2 Delete implimented and working(delete seems to work now :))" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project1.2 Delete implimented and working(delete seems to work now :))" />
+    <MESSAGE value="Project1.2 Delete implimented and working(delete added else to the if before the while)(this time really)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project1.2 Delete implimented and working(delete added else to the if before the while)(this time really)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>90</line>
-          <properties />
-          <option name="timeStamp" value="7" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/SkipList.java</url>
+          <line>101</line>
+          <properties class="SkipList" method="delete">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -360,15 +377,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1440">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        <state relative-caret-position="194">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SkipList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="124" column="42" lean-forward="true" selection-start-line="124" selection-start-column="42" selection-end-line="124" selection-end-column="42" />
+          <caret line="125" column="38" lean-forward="true" selection-start-line="125" selection-start-column="38" selection-end-line="125" selection-end-column="38" />
+          <folding>
+            <element signature="method#SkipList#0;class#SkipList#0" />
+            <element signature="method#choosePowers#0;class#SkipList#0" />
+            <element signature="method#chooseLevel#0;class#SkipList#0" />
+            <element signature="method#insert#0;class#SkipList#0" />
+            <element signature="method#first#0;class#SkipList#0" />
+            <element signature="method#last#0;class#SkipList#0" />
+          </folding>
         </state>
       </provider>
     </entry>
